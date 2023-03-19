@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2HB-iF-0ZF">
-    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,26 +14,26 @@
             <objects>
                 <viewController id="2HB-iF-0ZF" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qxn-no-Wo3">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ect-hv-kid">
-                                <rect key="frame" x="110" y="79" width="173" height="173"/>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ect-hv-kid">
+                                <rect key="frame" x="110" y="67" width="155" height="155"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ect-hv-kid" secondAttribute="height" multiplier="1:1" id="asO-2J-n9Q"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRU-Aj-byf">
-                                <rect key="frame" x="110" y="282" width="173" height="173"/>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRU-Aj-byf">
+                                <rect key="frame" x="110" y="252" width="155" height="155"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXO-G5-Vbs">
-                                <rect key="frame" x="110" y="485" width="173" height="173"/>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXO-G5-Vbs">
+                                <rect key="frame" x="110" y="437" width="155" height="155"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xg-j2-cDq">
-                                <rect key="frame" x="110" y="722.33333333333337" width="173" height="41"/>
+                                <rect key="frame" x="101" y="685" width="173" height="41"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="173" id="9oT-06-LO4"/>
@@ -44,7 +44,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="startButtonDidTapped:" destination="2HB-iF-0ZF" eventType="touchUpInside" id="76f-pz-ynA"/>
+                                    <action selector="startButtonDidTapped" destination="2HB-iF-0ZF" eventType="touchUpInside" id="ekC-zY-cvf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,6 +69,7 @@
                     <connections>
                         <outlet property="greenSignalView" destination="WXO-G5-Vbs" id="0rw-Fc-hvo"/>
                         <outlet property="redSignalView" destination="Ect-hv-kid" id="bKV-wn-HLG"/>
+                        <outlet property="startButton" destination="2xg-j2-cDq" id="Lhe-G8-cmb"/>
                         <outlet property="yellowSignalView" destination="tRU-Aj-byf" id="OGh-JK-P3Q"/>
                     </connections>
                 </viewController>
